@@ -138,6 +138,16 @@ python run_mcp.py
 python run_flow.py
 ```
 
+## GUI 前端（实验性）
+
+OpenManus 目前提供一个轻量级的 Web GUI，方便不熟悉命令行的用户体验基础能力：
+
+```bash
+uvicorn app.web.gui:app --host 0.0.0.0 --port 8000
+```
+
+然后在浏览器访问：`http://localhost:8000`。
+
 ## 添加自定义多智能体
 
 目前除了通用的 OpenManus Agent, 我们还内置了DataAnalysis Agent，适用于数据分析和数据可视化任务，你可以在`config.toml`中将这个智能体加入到`run_flow`中
