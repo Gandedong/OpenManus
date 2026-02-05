@@ -137,6 +137,16 @@ For unstable multi-agent version, you also can run:
 python run_flow.py
 ```
 
+## GUI (Experimental)
+
+OpenManus ships with a lightweight web GUI for non-CLI users:
+
+```bash
+uvicorn app.web.gui:app --host 0.0.0.0 --port 8000
+```
+
+Then open: `http://localhost:8000`.
+
 ### Custom Adding Multiple Agents
 
 Currently, besides the general OpenManus Agent, we have also integrated the DataAnalysis Agent, which is suitable for data analysis and data visualization tasks. You can add this agent to `run_flow` in `config.toml`.
